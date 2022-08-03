@@ -1,0 +1,95 @@
+.top {
+    padding: 15px 0;
+    background: #F2F3F5;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        &-item {
+            cursor: pointer;
+            &:last-child {
+                margin-left: 20px;
+            }
+            &:nth-child(5) {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../../assets/icons/arrow-down.svg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    right: -23px;
+                    top: 2px;
+                }
+            }
+        }
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #505567;
+    }
+}
+
+.work-time {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1B1C21;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-image: url('../../assets/icons/clock.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: -25px;
+        top: 2px;
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.vk {
+    font-size: 18px;
+    text-decoration: none;
+    color: #505567;
+}
+.insta {
+    font-size: 18px;
+    text-decoration: none;
+    color: #505567;
+    margin-right: 8px;
+}
+
+.user {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #505567;
+    cursor: pointer;
+    &::before {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+}
