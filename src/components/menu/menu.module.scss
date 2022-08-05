@@ -129,7 +129,10 @@
 }
 
 .contacts {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
     column-gap: 15px;
 }
 
@@ -140,6 +143,20 @@
     border-radius: 40px;
     text-align: center;
     cursor: pointer;
+}
+
+.call-order {
+    max-width: 75%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E2195B;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #E2195B;
 }
 
 .call {
@@ -173,6 +190,7 @@
 }
 
 .cart {
+    position: relative;
     margin-right: 14px;
     width: 44px;
     height: 44px;
@@ -183,6 +201,20 @@
     img {
         margin-top: 8px;
     }
+}
+
+.amount {
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #E2195B;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .price {

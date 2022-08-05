@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import styles from './menu.module.scss';
 import logo from '../../assets/img/logo.png';
@@ -12,9 +13,9 @@ const Menu = () => {
             <div className="container">
                 <div className={styles.wrap}>
                     <div className={styles['logo-wrap']}>
-                        <div className={styles['img-wrap']}>
+                        <Link to='/' className={styles['img-wrap']}>
                             <img src={logo} alt="flowers" className={styles.logo} />
-                        </div>
+                        </Link>
                         <span className={styles['logo__title']}>Доставка цветов в Воронеже</span>
                     </div>
                     <div className={styles['search-wrap']}>
@@ -25,11 +26,13 @@ const Menu = () => {
                             <img src={call} alt="call btn" className={styles.call} />
                         </div>
                         <span className={styles.phone}>+7 (920) 211-49-03</span>
+                        <a href="tel:+79202114903" className={styles['call-order']}>Заказать звонок</a>
                     </div>
                     <div className={styles.cla}>
                         <div className={`icon-favourites ${styles.favs}`}></div>
                         <div className={styles.cart}>
                             <img src={cart} alt="shopping basket" />
+                            <div className={styles.amount}>2</div>
                         </div>
                         <span className={styles.price}>16 500 &#x20bd;</span>
                     </div>
