@@ -19,6 +19,7 @@ const Bouquet = (props) => {
                 <button className={styles['slide__btn']}>В корзину</button>
             </div>
         </div>
+        <button className={`icon-favourites ${styles['add-to-fav']}`}></button>
     </div>
   )
 }

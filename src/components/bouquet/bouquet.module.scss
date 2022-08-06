@@ -1,5 +1,6 @@
 @import '../../style/funcs';
 .slide {
+    position: relative;
     height: 100%;
     max-width: prc(275, 1172);
     min-width: prc(275, 1172);
@@ -72,5 +73,25 @@
         font-size: 14px;
         line-height: 20px;
         color: #fff;
+    }
+}
+
+.add-to-fav {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 42px;
+    border: none;
+    border-radius: 50%;
+    color: #B0B2B9;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        color: #E2195B;
     }
 }
