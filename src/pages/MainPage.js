@@ -6,6 +6,8 @@ import Options from '../components/options/Options';
 import PromoSection from '../components/promoSection/PromoSection';
 import Comments from '../components/comments/Comments';
 import News from '../components/news/News';
+import Description from '../components/description/Description';
+import Benefits from '../components/benefits/Benefits';
 
 const MainPage = () => {
   return (
@@ -18,6 +20,8 @@ const MainPage = () => {
         <Gallery/>
         <Comments/>
         <News/>
+        <Description/>
+        <Benefits/>
     </main>
   )
 }

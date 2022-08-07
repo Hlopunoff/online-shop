@@ -1,0 +1,113 @@
+.footer {
+    padding-top: 40px;
+    background: #F2F6F7;
+    &__content {
+        display: flex;
+        column-gap: 30px;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+        }
+        &__list {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+        &__item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #353949;
+        }
+        .cols {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            &__title {
+                margin-bottom: 5px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                color: #222A46;
+            }
+        }
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+        &__contact {
+            display: flex;
+            flex-direction: column;
+        }
+        &__location {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #505567;
+        }
+        &__phone {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+            text-decoration: none;
+        }
+        &__email {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #222A46;
+            text-decoration: none;
+        }
+    }
+    &__footer {
+        margin-top: 30px;
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #E2E4EB;
+        .copyright {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #505567;
+        }
+        .payment-methods {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+        }
+        .socials {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+            &:first-child {
+                margin-right: 5px;
+            }
+        }
+        .social {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #505567;
+        }
+    }
+}
