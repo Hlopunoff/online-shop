@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 import BouquetList from '../components/bouquetList/BouquetList';
 import Gallery from '../components/gallery/Gallery';
 import Options from '../components/options/Options';
 import PromoSection from '../components/promoSection/PromoSection';
+import Comments from '../components/comments/Comments';
+import News from '../components/news/News';
 
 const MainPage = () => {
   return (
@@ -13,6 +16,8 @@ const MainPage = () => {
         <BouquetList title='Новинки'/>
         <Options/>
         <Gallery/>
+        <Comments/>
+        <News/>
     </main>
   )
 }

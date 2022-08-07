@@ -1,0 +1,111 @@
+@import '../../style/funcs';
+.section {
+    padding: 80px 0;
+    background: #F2F6F7;
+    &__header {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #222A46;
+    }
+    &__btn-add {
+        padding: 13px 30px;
+        background-color: #fff;
+        border: 1px solid #0093A2;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #0093A2;
+        cursor: pointer;
+    }
+    &__btn-all {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 13px 50px;
+        box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+        border: none;
+        border-radius: 5px;
+        background-color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #0093A2;
+        cursor: pointer;
+    }
+
+    .slide {
+        padding: 40px 50px;
+        max-width: 100%;
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+        border-radius: 10px;
+        background-color: #fff;
+        &__rating {
+            display: flex;
+            align-items: center;
+        }
+        &__star {
+            font-size: 24px;
+            color: #FFA500;
+        }
+        &__username {
+            margin-top: 5px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+        }
+        &__comment {
+            max-width: 808px;
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222A46;
+        }
+        &__comment-belongs-to {
+            display: block;
+            margin-top: 40px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222A46;
+        }
+        &__link {
+            margin-left: 5px;
+            text-decoration: none;
+            color: #0093A2;
+            font-weight: 500;
+        }
+        &__img-wrap {
+            width: 220px;
+            height: 220px;
+            padding: 10px;
+            border-radius: 50%;
+            border: 2px solid #0093A2;
+        }
+        &__img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
