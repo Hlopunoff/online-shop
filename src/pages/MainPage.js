@@ -10,20 +10,20 @@ import Description from '../components/description/Description';
 import Benefits from '../components/benefits/Benefits';
 
 const MainPage = () => {
-  return (
-    <main className="main">
-        <PromoSection/>
-        <BouquetList title='Букеты цветов с доставкой'/>
-        <BouquetList title='Лучшие предложения'/>
-        <BouquetList title='Новинки'/>
-        <Options/>
-        <Gallery/>
-        <Comments/>
-        <News/>
-        <Description/>
-        <Benefits/>
-    </main>
-  )
+    return (
+      <main className="main">
+          <PromoSection/>
+          <BouquetList title='Букеты цветов с доставкой' category="delivery"/>
+          <BouquetList title='Лучшие предложения' category="best"/>
+          <BouquetList title='Новинки' category="new"/>
+          <Options/>
+          <Gallery/>
+          <Comments/>
+          <News/>
+          <Description/>
+          <Benefits/>
+      </main>
+    )
 }
 
 

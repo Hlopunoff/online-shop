@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Букет 25 роз Нежный микс",
+            "size": "Высота: 60 см, Ширина: 35 см",
+            "currPrice": 13499,
+            "prevPrice": 15499,
+            "category": ["delivery", "best", "new"]
+        },
+        {
+            "id": 2,
+            "name": "Букет роз Ред наоми 60 см",
+            "size": "Высота: 60 см, Ширина: 35 см",
+            "currPrice": 13499,
+            "prevPrice": 15499,
+            "category": ["delivery", "best", "new"]
+        },
+        {
+            "id": 3,
+            "name": "Букет 5 пионовидных роз Мисти баблс",
+            "size": "Высота: 60 см, Ширина: 35 см",
+            "currPrice": 13499,
+            "prevPrice": 15499,
+            "category": ["delivery"]
+        },
+        {
+            "id": 4,
+            "name": "Букет роз микс 40 см",
+            "size": "Высота: 60 см, Ширина: 35 см",
+            "currPrice": 13499,
+            "prevPrice": 15499,
+            "category": ["delivery"]
+        },
+        {
+            "id": 5,
+            "name": "Роза \"Эксплоер\" 80 см 101шт",
+            "size": "Высота: 60 см, Ширина: 35 см",
+            "currPrice": 13499,
+            "prevPrice": 15499,
+            "category": ["best", "new"]
+        },
+        {
+            "id": 6,
+            "name": "Роза \"Мондиаль\" 60см 25шт с эвкалиптом",
+            "size": "Высота: 60 см, Ширина: 35 см",
+            "currPrice": 13499,
+            "prevPrice": 15499,
+            "category": ["best", "new"]
+        }
+    ]
+}
