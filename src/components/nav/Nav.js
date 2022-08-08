@@ -13,7 +13,17 @@ const Nav = () => {
                     <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Оплата</a></li>
                     <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Отзывы</a></li>
                     <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Блог</a></li>
-                    <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Информация</a></li>
+                    <li className={styles['top__list-item']}>
+                        <a href="#" className={styles['top__link']}>Информация</a>
+                        <div className={styles['top__dropdown']}>
+                            <ul className={styles['dropdown__list']}>
+                                <li className={styles['dropdown__item']}>Гарантии</li>
+                                <li className={styles['dropdown__item']}>Вопрос и ответ</li>
+                                <li className={styles['dropdown__item']}>Корпоративным клиентам</li>
+                                <li className={styles['dropdown__item']}>О компании</li>
+                            </ul>
+                        </div>
+                    </li>
                     <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Контакты</a></li>
                 </ul>
                 <div className={styles.socials}>
