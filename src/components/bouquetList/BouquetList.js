@@ -5,7 +5,6 @@ import { fetchBouquets } from '../../actions/actions';
 import Slider from '../slider/Slider';
 
 import styles from './bouquetList.module.scss';
-import slide1 from '../../assets/img/bouquet1.png';
 import Bouquet from '../bouquet/Bouquet';
 
 const BouquetList = (props) => {
@@ -14,7 +13,7 @@ const BouquetList = (props) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchBouquets('http://localhost:3001/items'));
+        dispatch(fetchBouquets('http://localhost:3001/bouquets'));
     }, [ ]);
 
 
@@ -27,7 +26,7 @@ const BouquetList = (props) => {
                     size={item.size}
                     currPrice={item.currPrice}
                     prevPrice={item.prevPrice}
-                    img={slide1}
+                    img={item.img}
                     id={item.id}/>
     }) : null;
 

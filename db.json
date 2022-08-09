@@ -1,12 +1,14 @@
 {
-    "items": [
+    "bouquets": [
         {
             "id": 1,
             "name": "Букет 25 роз Нежный микс",
             "size": "Высота: 60 см, Ширина: 35 см",
             "currPrice": 13499,
             "prevPrice": 15499,
-            "category": ["delivery", "best", "new"]
+            "category": ["delivery", "best", "new"],
+            "img": "https://i0.wp.com/pablogiftshop.co.ke/wp-content/uploads/2022/03/red-roses-and-berry-flowers-bouquet-4.jpg?fit=2560%2C2200&ssl=1",
+            "selected": false
         },
         {
             "id": 2,
@@ -14,7 +16,9 @@
             "size": "Высота: 60 см, Ширина: 35 см",
             "currPrice": 13499,
             "prevPrice": 15499,
-            "category": ["delivery", "best", "new"]
+            "category": ["delivery", "best", "new"],
+            "img": "https://content2.flowwow-images.com/data/flowers/1000x1000/21/1636702937_42250521.jpg",
+            "selected": false
         },
         {
             "id": 3,
@@ -22,7 +26,9 @@
             "size": "Высота: 60 см, Ширина: 35 см",
             "currPrice": 13499,
             "prevPrice": 15499,
-            "category": ["delivery"]
+            "category": ["delivery"],
+            "img": "https://www.brides.com/thmb/yUPPrY_zpEg-jEppH9Z8hQIVRhQ=/735x0/peonybouquet_640-3d8ee6a2dbcc4bfdbec9a56e5d6e6c92.jpg",
+            "selected": false
         },
         {
             "id": 4,
@@ -30,7 +36,9 @@
             "size": "Высота: 60 см, Ширина: 35 см",
             "currPrice": 13499,
             "prevPrice": 15499,
-            "category": ["delivery"]
+            "category": ["delivery"],
+            "img": "https://i0.wp.com/pablogiftshop.co.ke/wp-content/uploads/2022/03/red-roses-and-berry-flowers-bouquet-4.jpg?fit=2560%2C2200&ssl=1",
+            "selected": false
         },
         {
             "id": 5,
@@ -38,7 +46,9 @@
             "size": "Высота: 60 см, Ширина: 35 см",
             "currPrice": 13499,
             "prevPrice": 15499,
-            "category": ["best", "new"]
+            "category": ["best", "new"],
+            "img": "https://f-f.flowers/image/cache/catalog/image/cache/catalog/produkt/buket/130520/expl_rose_box-500x600.webp",
+            "selected": false
         },
         {
             "id": 6,
@@ -46,7 +56,76 @@
             "size": "Высота: 60 см, Ширина: 35 см",
             "currPrice": 13499,
             "prevPrice": 15499,
-            "category": ["best", "new"]
+            "category": ["best", "new"],
+            "img": "https://content2.flowwow-images.com/data/flowers/1000x1000/44/1637832264_50028244.jpg",
+            "selected": false
+        }
+    ],
+    "clients": [
+        {
+            "img": "https://www.odealarose.com/blog/wp-content/uploads/2017/05/Odealarose_101212_-0664-683x1024.jpg",
+            "id": 1
+        },
+        {
+            "img": "https://thumbs.dreamstime.com/b/asian-woman-standing-flower-shop-holding-bouquet-flowers-asian-woman-standing-flower-shop-holding-bouquet-115917181.jpg",
+            "id": 2
+        },
+        {
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2k_JpI15gSWwE02F-m-u0MxdA26N0sbJT2aakUYmo-GhgUgjRP815fJB-kbR6JZnorl0&usqp=CAU",
+            "id": 3
+        },
+        {
+            "img": "https://media.istockphoto.com/photos/great-view-of-bright-bouquet-of-red-fresh-roses-in-hands-of-young-picture-id1321981655?k=20&m=1321981655&s=612x612&w=0&h=DeqvdZs-CqPbKTeeESB396FzfwtuPRf3z2naKCc7nfE=",
+            "id": 4
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "text": "Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.",
+            "rating": 5,
+            "commentTo": "Розы 80см",
+            "img": "https://i0.wp.com/pablogiftshop.co.ke/wp-content/uploads/2022/03/red-roses-and-berry-flowers-bouquet-4.jpg?fit=2560%2C2200&ssl=1",
+            "userName": "Мередова Елена Григорьевна"
+        },
+        {
+            "id": 2,
+            "text": "Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.",
+            "rating": 3,
+            "commentTo": "Букет роз Ред наоми 60см",
+            "img": "https://content2.flowwow-images.com/data/flowers/1000x1000/21/1636702937_42250521.jpg",
+            "userName": "Захарова Елена Григорьевна"
+        },
+        {
+            "id": 3,
+            "text": "Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.",
+            "rating": 4,
+            "commentTo": "Роза \"Эксплоер\" 80см 101шт",
+            "img": "https://f-f.flowers/image/cache/catalog/image/cache/catalog/produkt/buket/130520/expl_rose_box-500x600.webp",
+            "userName": "Петрова Кристина Андреевна"
+        }
+    ],
+    "news": [
+        {
+            "id": 1,
+            "title": "С чем сочетаются тюльпаны",
+            "preview": "Тюльпаны – нежные цветы, ассоциирующиеся с наступлением весенних дней.",
+            "date": "18 декабря 2021",
+            "img": "https://venusinfleurs.ru/image/catalog/izomod/2470/101-nezhno-rozovyy-tyulpan-v-bukete_3.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Какие цветы дарят мужчинам",
+            "preview": "Многие мужчины любят цветы не меньше, чем женщины.",
+            "date": "17 декабря 2021",
+            "img": "https://images.unsplash.com/photo-1569247539611-3735ffb79cb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80"
+        },
+        {
+            "id": 3,
+            "title": "К чему дарят белые розы",
+            "preview": "По какому поводу можно подарить белые розы, и когда это будет неуместно.",
+            "date": "16 декабря 2021",
+            "img": "https://www.roza4u.ru/image/cache/catalog/belye-rozy-v-shkatulke-serdtse/belye-rozy-v-shkatulke-serdtse-1400x1400.jpg"
         }
     ]
 }

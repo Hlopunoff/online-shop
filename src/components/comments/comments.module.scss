@@ -60,7 +60,11 @@
         }
         &__star {
             font-size: 24px;
-            color: #FFA500;
+            color: #57595a;
+            &_active {
+                font-size: 24px;
+                color: #FFA500;
+            }
         }
         &__username {
             margin-top: 5px;
