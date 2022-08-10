@@ -33,7 +33,12 @@ const BouquetList = (props) => {
     return (
         <section className={styles.section}>
             <div className="container">
-                <h2 className={styles['section__title']}>{props.title}</h2>
+                <div className={styles['section__header']}>
+                    <h2 className={styles['section__title']}>{props.title}</h2>
+                    <button className={styles['section__btn-all']}>
+                        <span className='icon-arrow-right'></span>
+                    </button>
+                </div>
                 <Slider styles={{width: '100%', height: '430px'}}>
                     {loading}
                     {error}

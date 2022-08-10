@@ -12,10 +12,13 @@
     &__content {
         margin-top: 30px;
         display: flex;
+        justify-content: center;
         align-items: center;
         column-gap: 20px;
     }
     &__card {
+        color: #222A46;
+        text-decoration: none;
         text-align: center;
         max-width: prc(278, 1172);
         height: 350px;

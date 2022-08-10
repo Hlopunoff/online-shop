@@ -15,7 +15,10 @@ const News = () => {
     return (
         <section className={styles.section}>
             <div className="container">
-                <h2 className={styles['section__title']}>Новости</h2>
+                <div className={styles['section__header']}>
+                    <h2 className={styles['section__title']}>Новости</h2>
+                    <button className={`${styles['section__btn-all']}`}>Все новости <span className='icon-arrow-right'></span></button>
+                </div>
                 <div className={styles['section__content']}>
                     {news.map(item => {
                         return (

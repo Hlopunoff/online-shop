@@ -1,0 +1,22 @@
+.page__route {
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    .route {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #505567;
+        text-decoration: none;
+        &-main {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #1B1C21;
+            text-decoration: none;
+        }
+    }
+}

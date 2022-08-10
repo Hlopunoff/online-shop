@@ -2,6 +2,11 @@
     margin-bottom: 60px;
     height: 510px;
     width: 100%;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     &__title {
         margin-bottom: 30px;
         font-style: normal;
@@ -9,5 +14,12 @@
         font-size: 40px;
         line-height: 50px;
         color: #222A46;
+    }
+    &__btn-all {
+        background-color: #fff;
+        border: none;
+        font-size: 26px;
+        line-height: 24px;
+        cursor: pointer;
     }
 }
