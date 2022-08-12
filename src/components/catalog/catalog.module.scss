@@ -1,6 +1,7 @@
 .catalog {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 20px;
     &__header {
         display: flex;
@@ -99,5 +100,21 @@
         grid-template-columns: repeat(3, max(278px));
         grid-auto-rows: max-content;
         gap: 20px;
+    }
+    .show-more {
+        padding: 12px 0;
+        background-color: #fff;
+        border: 1px solid #D7D9DC;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #353949;
     }
 }

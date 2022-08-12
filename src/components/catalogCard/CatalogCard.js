@@ -13,10 +13,10 @@ const CatalogCard = (props) => {
             <div className={styles['card__content-head']}>
                 <div className={styles['rating']}>
                     <span className={`icon-star ${styles['star']}`}></span>
-                    <span className={styles['rating__mark']}>4.0</span>
-                    <span className={styles['rating__amount']}>(15 отзывов)</span>
+                    <span className={styles['rating__mark']}>{props.rating}</span>
+                    <span className={styles['rating__amount']}>({props.amountOfComments} отзывов)</span>
                 </div>
-                <span className={styles['duration']}>150 мин</span>
+                <span className={styles['duration']}>{props.duration} мин</span>
             </div>
             <div className={styles['card__sizes']}>
                 Размер:
@@ -32,6 +32,7 @@ const CatalogCard = (props) => {
                 <button className={styles['card__btn-add']}>В корзину</button>
             </div>
         </div>
+        <div className={`icon-favourites ${styles['add-to-fav']}`}></div>
     </div>
   )
 }

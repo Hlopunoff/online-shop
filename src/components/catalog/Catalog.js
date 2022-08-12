@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {fetchBouquets} from '../../actions/actions';
 import CatalogCard from '../catalogCard/CatalogCard';
+import FutureBouquets from '../futureBouquets/FutureBouquets';
 
 import styles from './catalog.module.scss';
+import showMoreImg from '../../assets/icons/Rotate.svg';
 
 const Catalog = (props) => {
     const bouquets = useSelector(state => state.bouquets.bouquets?.filter(item => {
@@ -51,9 +53,17 @@ const Catalog = (props) => {
                             title={item.name}
                             img={item.img}
                             currPrice={item.currPrice}
-                            prevPrice={item.prevPrice}/>
+                            prevPrice={item.prevPrice}
+                            amountOfComments={item.amountOfComments}
+                            rating={item.rating}
+                            duration={item.deliveryDuration}/>
                 }) : null}
             </div>
+            <FutureBouquets/>
+            <button className={styles['show-more']}>
+                <img src={showMoreImg} alt="show more" />
+                Показать еще
+            </button>
         </section>
     )
 }

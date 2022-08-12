@@ -1,5 +1,6 @@
 @import '../../style/funcs';
 .card {
+    position: relative;
     width: 100%;
     border: 1px solid #E2E4EB;
     border-radius: 5px;
@@ -118,5 +119,22 @@
         line-height: 20px;
         color: #E2195B;
         cursor: pointer;
+    }
+    .add-to-fav {
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        line-height: 36px;
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        border-radius: 50%;
+        color: #8f9fa3;
+        cursor: pointer;
+        &:hover {
+            color: #E2195B;
+        }
     }
 }

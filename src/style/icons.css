@@ -51,20 +51,6 @@
 .icon-user:before {
   content: "\e91c";
 }
-.icon-view .path1:before {
-  content: "\e91d";
-  color: none;
-}
-.icon-view .path2:before {
-  content: "\e91e";
-  margin-left: -1em;
-  color: none;
-}
-.icon-view .path3:before {
-  content: "\e91f";
-  margin-left: -1em;
-  color: none;
-}
 .icon-vk-logo:before {
   content: "\e920";
 }

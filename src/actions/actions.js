@@ -2,6 +2,8 @@ import {clientsFetching, clientsFetched, clientsError} from '../reducers/clients
 import { bouquetsFetching, bouquetsFetched, bouquetsError } from "../reducers/bouquetsSlice";
 import { commentsError, commentsFetching, commentsFetched } from '../reducers/commentsSlice';
 import { newsFetched, newsError, newsFetching } from '../reducers/newsSlice';
+import { soonFetching, soonFetched, soonError} from '../reducers/incomingSlice';
+
 export const fetchBouquets = (url) => {
     return async (dispatch) => {
         try {
@@ -58,6 +60,21 @@ export const fetchNews = (url) => {
             dispatch(newsFetched(data));
         } catch (error) {
             dispatch(newsError());
+        }
+    }
+};
+
+export const fetchFutureBouquets = (url) => {
+    return async (dispatch) => {
+        try {
+            dispatch(soonFetching());
+
+            const res = await fetch(url);
+            const data = await res.json();
+
+            dispatch(soonFetched(data));
+        } catch (error) {
+            dispatch(soonError());
         }
     }
 };

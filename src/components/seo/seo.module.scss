@@ -1,0 +1,39 @@
+.seo {
+    padding-top: 60px;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #222A46;
+    }
+    &__text {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #353949;
+    }
+    &__list {
+        margin-left: 23px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #353949;
+    }
+    &__subtitle {
+        margin-top: 40px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #222A46;
+    }
+}
