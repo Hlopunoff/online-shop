@@ -12,7 +12,12 @@
             "types": ["rose"],
             "amountOfComments": 15,
             "rating": "4.0",
-            "deliveryDuration": 150
+            "deliveryDuration": 150,
+            "relativeTo": "colleague",
+            "type": "eustoma",
+            "h": "61-75",
+            "d": ">55",
+            "color": "red"
         },
         {
             "id": 2,
@@ -26,7 +31,12 @@
             "types": ["rose"],
             "amountOfComments": 15,
             "rating": "4.0",
-            "deliveryDuration": 150
+            "deliveryDuration": 150,
+            "relativeTo": "boss",
+            "type": "tulips",
+            "h": "<45",
+            "d": "26-40",
+            "color": "light-blue"
         },
         {
             "id": 3,
@@ -40,7 +50,12 @@
             "types": ["rose"],
             "amountOfComments": 15,
             "rating": "4.0",
-            "deliveryDuration": 150
+            "deliveryDuration": 150,
+            "relativeTo": "daughter",
+            "type": "eustoma",
+            "h": ">75",
+            "d": ">55",
+            "color": "white"
         },
         {
             "id": 4,
@@ -54,7 +69,12 @@
             "types": ["rose"],
             "amountOfComments": 15,
             "rating": "4.0",
-            "deliveryDuration": 150
+            "deliveryDuration": 150,
+            "relativeTo": "boss",
+            "type": "eustoma",
+            "h": "61-75",
+            "d": "41-55",
+            "color": "light-pink"
         },
         {
             "id": 5,
@@ -68,7 +88,12 @@
             "types": ["rose"],
             "amountOfComments": 15,
             "rating": "4.0",
-            "deliveryDuration": 150
+            "deliveryDuration": 150,
+            "relativeTo": "wife",
+            "type": "eustoma",
+            "h": "61-75",
+            "d": ">55",
+            "color": "pink"
         },
         {
             "id": 6,
@@ -82,7 +107,12 @@
             "types": ["rose"],
             "amountOfComments": 15,
             "rating": "4.0",
-            "deliveryDuration": 140
+            "deliveryDuration": 140,
+            "relativeTo": "boss",
+            "type": "eustoma",
+            "h": "46-60",
+            "d": "<25",
+            "color": "dark-red"
         }
     ],
     "clients": [

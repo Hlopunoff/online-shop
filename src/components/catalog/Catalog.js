@@ -8,14 +8,24 @@ import styles from './catalog.module.scss';
 import showMoreImg from '../../assets/icons/Rotate.svg';
 
 const Catalog = (props) => {
+    const filters = useSelector(state => state.filter.filters);
     const bouquets = useSelector(state => state.bouquets.bouquets?.filter(item => {
-        return item.types.includes(props.type);
+        if(item.types.includes(props.type)) {
+            for(let key in filters) {
+                if(filters[key].includes(item[key])) {
+                    return true;
+                }
+            }
+            return false;
+        } else {
+            return false;
+        }
     }));
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(fetchBouquets('http://localhost:3001/bouquets'));
-    }, [ ]);
+    }, [filters]);
 
     return (
         <section className={styles['catalog']}>
@@ -56,7 +66,8 @@ const Catalog = (props) => {
                             prevPrice={item.prevPrice}
                             amountOfComments={item.amountOfComments}
                             rating={item.rating}
-                            duration={item.deliveryDuration}/>
+                            duration={item.deliveryDuration}
+                            id={item.id}/>
                 }) : null}
             </div>
             <FutureBouquets/>

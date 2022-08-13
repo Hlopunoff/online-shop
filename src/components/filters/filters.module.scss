@@ -80,6 +80,7 @@
                 }
             }
             &__body {
+                position: relative;
                 width: 100%;
                 input {
                     width: 100%;
@@ -87,25 +88,9 @@
                     background: #D0D2D7;
                     border: none;
                     border-radius: 24px;
-                    // color: #0093A2;
+                    color: #0093A2;
                     outline: none;
-                    appearance: none;
-                    &::-webkit-slider-thumb {
-                        margin-top: -8px;
-                        appearance: none;
-                        cursor: pointer;
-                        width: 20px;
-                        height: 20px;
-                        background-color: #fff;
-                        border: 3px solid #0093A2;
-                        border-radius: 50%;
-                    }
-                    &::-webkit-slider-runnable-track {
-                        appearance: none;
-                        height: 100%;
-                        margin-top: -3px;
-                        background-color: #0093A2;
-                    }
+                    cursor: pointer;
                 }
             }
             &__footer {

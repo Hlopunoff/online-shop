@@ -6,6 +6,7 @@ import clients from '../reducers/clientsSlice';
 import comments from '../reducers/commentsSlice';
 import news from '../reducers/newsSlice';
 import soon from '../reducers/incomingSlice';
+import filter from '../reducers/filterSlice';
 
 const store = configureStore({
     reducer: {
@@ -15,6 +16,7 @@ const store = configureStore({
         news,
         singleBouquet,
         soon,
+        filter,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
     devTools: process.env.NODE_ENV !== 'production'
