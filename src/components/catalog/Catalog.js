@@ -12,7 +12,11 @@ const Catalog = (props) => {
     const bouquets = useSelector(state => state.bouquets.bouquets?.filter(item => {
         if(item.types.includes(props.type)) {
             for(let key in filters) {
-                if(filters[key].includes(item[key])) {
+                if(Array.isArray(filters[key])) {
+                    if (filters[key].includes(item[key])) {
+                        return true;
+                    }
+                }else if(key === 'price' && item['currPrice'] > filters[key]) {
                     return true;
                 }
             }

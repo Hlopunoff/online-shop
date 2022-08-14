@@ -1,6 +1,6 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useRef, useState} from 'react';
 import { useDispatch } from 'react-redux';
-import {addFilter, deleteFilter, clearAllFilters} from '../../reducers/filterSlice';
+import {addFilter, deleteFilter, clearAllFilters, addFilterByPrice} from '../../reducers/filterSlice';
 
 import styles from './filters.module.scss';
 import arrowTopImg from '../../assets/icons/arrow-top.svg';
@@ -9,7 +9,10 @@ const Filters = () => {
     const dispatch = useDispatch();
     const rangeRef = useRef();
     const filterField = useRef();
-    // const [maxPrice, setMaxPrice] = useState();
+    const rangeBtnLeft = useRef();
+    const rangeLineLeft = useRef();
+    const setPriceRef = useRef();
+    const [price, setPrice] = useState(500);
 
     const filterBy = (e) => {
         if(e.target && e.target.checked) {
@@ -44,6 +47,10 @@ const Filters = () => {
         }
     }
 
+    const filterByPrice = () => {
+        dispatch(addFilterByPrice(price));
+    }
+
     return (
         <aside className={styles.aside}>
             <div className={styles.filters} ref={filterField}>
@@ -59,16 +66,19 @@ const Filters = () => {
                     <h3 className={styles['filters__price-title']}>Цена</h3>
                     <div className={styles['filter']}>
                         <div className={styles['filter__header']}>
-                            <input 
+                            <input
+                                ref={setPriceRef} 
                                 type="number" 
+                                value={price}
                                 min={500}
-                                // value={500}
-                                className="filter__header-from"/>
-                            <input 
-                                type="number" 
-                                max={45500} 
-                                // value={maxPrice}
-                                className="filter__header-to"/>
+                                max={45500}
+                                className="filter__header-from"
+                                onChange={() => {
+                                    rangeBtnLeft.current.style.left = (setPriceRef.current.value / rangeRef.current.max) * 100 + '%';
+                                    rangeLineLeft.current.style.width = (setPriceRef.current.value / rangeRef.current.max) * 100 + '%';
+                                    setPrice(setPriceRef.current.value);
+                                    filterByPrice();
+                                }}/>
                         </div>
                         <div className={styles['filter__body']}>
                             <input 
@@ -76,14 +86,23 @@ const Filters = () => {
                                 type="range"
                                 min={500}
                                 max={45500}
-                                // onInput={() => setMaxPrice(rangeRef.current.value)}
+                                onInput={function() {
+                                    rangeBtnLeft.current.style.left = (rangeRef.current.value / rangeRef.current.max) * 100 + '%';
+                                    rangeLineLeft.current.style.width = (rangeRef.current.value / rangeRef.current.max) * 100 + '%';
+                                    setPrice(rangeRef.current.value);
+                                    filterByPrice();
+                                }}
                                 />
                             <div 
-                                className={styles['progress-line']}
+                                ref={rangeLineLeft}
+                                className={`${styles['progress-line']} left`}
                                 ></div>
                             <div 
-                                className={styles['progress-thumb']}
-                                ></div>
+                                ref={rangeBtnLeft}
+                                className={styles['progress-thumb-wrap']}
+                                >
+                                    <div className={styles['progress-thumb']}></div>
+                            </div>
                         </div>
                         <div className={styles['filter__footer']}>
                             <span className="filter__footer-from">от 500 ₽</span>
@@ -353,6 +372,9 @@ const Filters = () => {
                     filterField.current.querySelectorAll('[data-filter=color]').forEach(item => {
                         item.style.border = '6px solid #fff';
                     });
+                    setPrice(500);
+                    rangeLineLeft.current.style.width = '0%';
+                    rangeBtnLeft.current.style.left = '0';
                 }}
                 >Очистить фильтры</button>
         </aside>

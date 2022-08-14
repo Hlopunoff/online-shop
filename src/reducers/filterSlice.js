@@ -7,6 +7,7 @@ const initialState = {
         d: [],
         relativeTo: [],
         type: [],
+        price: 500,
     }
 };
 
@@ -23,13 +24,18 @@ const filterSlice = createSlice({
         }),
         clearAllFilters: (state) => {
             for(let key in state.filters) {
-                state.filters[key] = [];
+                if(Array.isArray(state.filters[key])) {
+                    state.filters[key] = [];
+                } else {
+                    state.filters[key] = 500;
+                }
             }
-        }
+        },
+        addFilterByPrice: (state, action) => {state.filters.price = action.payload}
     }
 });
 
 const {actions, reducer} = filterSlice;
 
 export default reducer;
-export const {addFilter, deleteFilter, clearAllFilters} = actions;
+export const {addFilter, deleteFilter, clearAllFilters, addFilterByPrice} = actions;
