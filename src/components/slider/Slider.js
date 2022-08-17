@@ -23,7 +23,6 @@ const Slider = (props) => {
 
         sliderRef.current.style.left = `${offset}%`;
     };
-    
     return (
         <>
             <div className={styles.slider} style={props.styles}>

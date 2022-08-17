@@ -1,21 +1,30 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { addToCart, addToFavorite } from '../../reducers/singleBouquetSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addBouquetTo, addToCart } from '../../reducers/singleBouquetSlice';
 
 import styles from './bouquet.module.scss';
 
 const Bouquet = (props) => {
-    const bouquets = useSelector(state => state.bouquets.bouquets);
     const dispatch = useDispatch();
+    const bouquets = useSelector(state => state.bouquets.bouquets);
 
     const addBouquet = (id, purpose) => {
-        const selected = bouquets.filter(item => item.id === id)[0];
-        if(purpose === 'cart') {
-            dispatch(addToCart(selected));
+        const bouquet = bouquets.find(item => item.id === id);
+        if(bouquet.selected) {
+            return 0;
+        }
+
+        if(purpose === 'fav') {
+            dispatch(addBouquetTo({
+                url: 'http://localhost:3001/bouquets',
+                id
+            }));
         } else {
-            dispatch(addToFavorite(selected));
+            dispatch(addToCart(bouquet));
         }
     };
+
+
     return (
         <div className={styles['slide']}>
             <div className={styles['slide__img-wrap']}>
@@ -34,7 +43,11 @@ const Bouquet = (props) => {
                     <button className={styles['slide__btn']} onClick={() => {addBouquet(props.id, 'cart')}}>В корзину</button>
                 </div>
             </div>
-            <button className={`icon-favourites ${styles['add-to-fav']}`} onClick={() => {addBouquet(props.id, 'fav')}}></button>
+            <button 
+            className={`icon-favourites ${styles['add-to-fav']}`} 
+            onClick={() => {
+                addBouquet(props.id, 'fav');
+                }}></button>
         </div>
     )
 }

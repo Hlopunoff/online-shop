@@ -1,23 +1,7 @@
 import {clientsFetching, clientsFetched, clientsError} from '../reducers/clientsSlice';
-import { bouquetsFetching, bouquetsFetched, bouquetsError } from "../reducers/bouquetsSlice";
 import { commentsError, commentsFetching, commentsFetched } from '../reducers/commentsSlice';
 import { newsFetched, newsError, newsFetching } from '../reducers/newsSlice';
 import { soonFetching, soonFetched, soonError} from '../reducers/incomingSlice';
-
-export const fetchBouquets = (url) => {
-    return async (dispatch) => {
-        try {
-            dispatch(bouquetsFetching());
-
-            const res = await fetch(url);
-            const data = await res.json();
-
-            dispatch(bouquetsFetched(data));
-        } catch (error) {
-            dispatch(bouquetsError());
-        }
-    }
-};
 
 export const fetchClients = (url) => {
     return async (dispatch) => {

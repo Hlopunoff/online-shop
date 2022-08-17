@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import MainPage from "./pages/MainPage";
 import Footer from "./components/footer/Footer";
 import CatalogPage from "./pages/CatalogPage";
+import Cart from "./components/cart/Cart";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/roses" element={<CatalogPage/>}/>
       </Routes>
       <Footer/>
+      <Cart/>
     </>
   );
 }

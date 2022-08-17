@@ -19,6 +19,13 @@ const Menu = () => {
     const totalPrice = cart.reduce((sum, item) => {
         return sum += item.currPrice;
     }, 0);
+
+    const showCart = () => {
+        document.querySelector('.cart_cart__substrate__aKaEs').style.visibility = 'visible';
+        document.querySelector('.cart_cart__H2Shb').style.right = '0';
+        document.body.classList.add('cart-shown');
+    }
+
     return (
         <div className={styles.menu}>
             <div className="menu-top">
@@ -74,7 +81,7 @@ const Menu = () => {
                             <div className={`icon-favourites ${styles.favs}`}>
                                 <div className={styles.amount}>{favorites.length}</div>
                             </div>
-                            <div className={styles.cart}>
+                            <div className={styles.cart} onClick={showCart}>
                                 <img src={cartImg} alt="shopping basket" />
                                 <div className={styles.amount}>{cart.length}</div>
                             </div>

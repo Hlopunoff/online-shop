@@ -8,6 +8,7 @@ const initialState = {
         relativeTo: [],
         type: [],
         price: 500,
+        amountOfFlowers: []
     }
 };
 
@@ -31,7 +32,7 @@ const filterSlice = createSlice({
                 }
             }
         },
-        addFilterByPrice: (state, action) => {state.filters.price = action.payload}
+        addFilterByPrice: (state, action) => {state.filters.price = action.payload},
     }
 });
 

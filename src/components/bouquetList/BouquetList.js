@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchBouquets } from '../../actions/actions';
+import { fetchBouquets } from '../../reducers/bouquetsSlice';
 
 import Slider from '../slider/Slider';
 

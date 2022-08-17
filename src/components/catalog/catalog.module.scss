@@ -94,6 +94,32 @@
             color: #0093A2;
             background: #F2F6F7;
         }
+        &_active {
+            position: relative;
+            color: #0093A2;
+            background: #F2F6F7;
+            padding-right: 25px;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 16px;
+                right: 5px;
+                transform: rotate(45deg);
+                width: 10px;
+                height: 3px;
+                background-color: #505567;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                top: 16px;
+                right: 5px;
+                transform: rotate(-45deg);
+                width: 10px;
+                height: 3px;
+                background-color: #505567;
+            }
+        }
     }
     &__list {
         display: grid;
