@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchComments } from '../../actions/actions';
+import { fetchComments } from '../../reducers/commentsSlice';
 import { v4 as uuidv4 } from 'uuid';
 import Slider from '../slider/Slider';
 

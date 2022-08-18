@@ -7,7 +7,7 @@ import Seo from '../components/seo/Seo';
 const CatalogPage  = () => {
   return (
     <main>
-        <PageRouting/>
+        <PageRouting direction="Букеты из роз"/>
         <div className="container">
             <div className="content" style={{display: 'flex', columnGap: '20px', paddingBottom:'60px'}}>
                 <Filters/>

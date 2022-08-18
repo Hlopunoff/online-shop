@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './nav.module.scss';
 
@@ -9,12 +10,12 @@ const Nav = () => {
             <div className={styles['top-wrap']}>
                 <span className={styles['work-time']}>Пн-Сб: 8:00–20:00 Вс: 9:00–20:00</span>
                 <ul className={styles['top__list']}>
-                    <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Доставка</a></li>
-                    <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Оплата</a></li>
-                    <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Отзывы</a></li>
-                    <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Блог</a></li>
+                    <li className={styles['top__list-item']}>Доставка</li>
+                    <li className={styles['top__list-item']}>Оплата</li>
+                    <Link to="comments" className={styles['top__list-item']}>Отзывы</Link>
+                    <li className={styles['top__list-item']}>Блог</li>
                     <li className={styles['top__list-item']}>
-                        <a href="#" className={styles['top__link']}>Информация</a>
+                        Информация
                         <div className={styles['top__dropdown']}>
                             <ul className={styles['dropdown__list']}>
                                 <li className={styles['dropdown__item']}>Гарантии</li>
@@ -24,7 +25,7 @@ const Nav = () => {
                             </ul>
                         </div>
                     </li>
-                    <li className={styles['top__list-item']}><a href="#" className={styles['top__link']}>Контакты</a></li>
+                    <li className={styles['top__list-item']}>Контакты</li>
                 </ul>
                 <div className={styles.socials}>
                     <a href='#' className={`icon-vk-logo ${styles.vk}`}></a>

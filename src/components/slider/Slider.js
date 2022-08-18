@@ -8,20 +8,14 @@ const Slider = (props) => {
 
     const scrollSlider = (side) => {
         if(side === 'left') {
-            if(offset === -200) {
-                setOffset(0);
-            } else {
-                setOffset(prevOffset => prevOffset - 100);
-            }
+            setOffset(prev => offset < 1 ? prev + 1 : -1);
         } else {
-            if(offset === 0) {
-                setOffset(-200);
-            } else {
-                setOffset(prevOffset => prevOffset + 100);
-            }
+            setOffset(prev => offset > -1 ? prev - 1 : 1);
         }
 
-        sliderRef.current.style.left = `${offset}%`;
+        // console.log(props.children.length);
+        //!todo Сделать более гибкий слайдер, основываясь на количестве получаемых children
+        sliderRef.current.style.transform = `translateX(${offset * -100}%)`;
     };
     return (
         <>
