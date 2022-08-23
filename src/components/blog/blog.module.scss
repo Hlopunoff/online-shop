@@ -1,0 +1,79 @@
+@import '../../style/funcs';
+.blog {
+    padding-bottom: 80px;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #222A46;
+    }
+    &__content {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, prc(377, 1180));
+        grid-auto-rows: 432px;
+        column-gap: 20px;
+        row-gap: 30px;
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+            border-radius: 5px;
+            border: 1px solid #F2F3F5;
+            &__img-wrap {
+                width: 100%;
+                height: prc(250, 432);
+            }
+            &__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px 5px 0 0;
+            }
+            &__title {
+                margin: 20px 25px 10px 25px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                color: #1B1C21;
+            }
+            &__descr {
+                margin: 0 10px 0 25px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #353949;
+            }
+            &__date {
+                display: block;
+                position: absolute;
+                margin-top: 10px;
+                bottom: 25px;
+                left: 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7D818E;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 50px;
+        width: 100%;
+        padding: 14px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #353949;
+        border: 1px solid #D7D9DC;
+        border-radius: 3px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}

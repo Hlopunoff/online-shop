@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = {
     news: [],
@@ -6,23 +6,40 @@ const initialState = {
     isError: false,
 };
 
+export const fetchNews = createAsyncThunk(
+    'news/fetchNews',
+    async (url, {rejectWithValue}) => {
+        try {
+            const res = await fetch(url);
+
+            if(!res.ok) {
+                throw new Error(`Could not fetch this url: ${url}`);
+            }
+            const data = await res.json();
+            return data;
+        } catch (error) {
+            rejectWithValue(error.message);
+        }
+    }
+);
+
 const newsSlice = createSlice({
     name: 'news',
     initialState,
-    reducers: {
-        newsFetching: (state) => {state.isLoading = true},
-        newsFetched: (state, action) => {
+    reducers: {},
+    extraReducers: (builder) => {
+        builder.addCase(fetchNews.pending, (state) => {state.isLoading = true})
+        .addCase(fetchNews.fulfilled, (state, action) => {
             state.news = action.payload;
             state.isLoading = false;
-        },
-        newsError: (state) => {
-            state.isError = true;
+        })
+        .addCase(fetchNews.rejected, (state) => {
             state.isLoading = false;
-        }
+            state.isError = true;
+        })
     }
 });
 
-const {actions, reducer} = newsSlice;
+const {reducer} = newsSlice;
 
 export default reducer;
-export const {newsFetching, newsFetched, newsError} = actions;

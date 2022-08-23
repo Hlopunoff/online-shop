@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux/es/exports';
 import { fetchNews } from '../../reducers/newsSlice';
 
-import styles from './news.module.scss';
+import styles from './blog.module.scss';
 
-const News = () => {
+const Blog = () => {
     const news = useSelector(state => state.news.news);
     const dispatch = useDispatch();
 
@@ -13,13 +13,10 @@ const News = () => {
     }, [ ]);
 
     return (
-        <section className={styles.section}>
+        <section className={styles['blog']}>
             <div className="container">
-                <div className={styles['section__header']}>
-                    <h2 className={styles['section__title']}>Новости</h2>
-                    <button className={`${styles['section__btn-all']}`}>Все новости <span className='icon-arrow-right'></span></button>
-                </div>
-                <div className={styles['section__content']}>
+                <h2 className={styles['blog__title']}>Блог</h2>
+                <div className={styles['blog__content']}>
                     {news.map(item => {
                         return (
                             <div className={styles['card']} key={item.id}>
@@ -33,10 +30,10 @@ const News = () => {
                         );
                     })}
                 </div>
+                <button className={styles['blog__btn']}>Показать еще</button>
             </div>
         </section>
     )
 }
 
-
-export default News;
+export default Blog;

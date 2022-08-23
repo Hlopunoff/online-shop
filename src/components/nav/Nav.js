@@ -13,7 +13,7 @@ const Nav = () => {
                     <li className={styles['top__list-item']}>Доставка</li>
                     <li className={styles['top__list-item']}>Оплата</li>
                     <Link to="comments" className={styles['top__list-item']}>Отзывы</Link>
-                    <li className={styles['top__list-item']}>Блог</li>
+                    <Link to="blog" className={styles['top__list-item']}>Блог</Link>
                     <li className={styles['top__list-item']}>
                         Информация
                         <div className={styles['top__dropdown']}>
@@ -21,7 +21,7 @@ const Nav = () => {
                                 <li className={styles['dropdown__item']}>Гарантии</li>
                                 <li className={styles['dropdown__item']}>Вопрос и ответ</li>
                                 <li className={styles['dropdown__item']}>Корпоративным клиентам</li>
-                                <li className={styles['dropdown__item']}>О компании</li>
+                                <Link to='info' className={styles['dropdown__item']}>О компании</Link>
                             </ul>
                         </div>
                     </li>

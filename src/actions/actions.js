@@ -1,5 +1,4 @@
 import {clientsFetching, clientsFetched, clientsError} from '../reducers/clientsSlice';
-import { newsFetched, newsError, newsFetching } from '../reducers/newsSlice';
 import { soonFetching, soonFetched, soonError} from '../reducers/incomingSlice';
 
 export const fetchClients = (url) => {
@@ -13,21 +12,6 @@ export const fetchClients = (url) => {
             dispatch(clientsFetched(data));
         } catch (error) {
             dispatch(clientsError());
-        }
-    }
-};
-
-export const fetchNews = (url) => {
-    return async (dispatch) => {
-        try {
-            dispatch(newsFetching());
-
-            const res = await fetch(url);
-            const data = await res.json();
-
-            dispatch(newsFetched(data));
-        } catch (error) {
-            dispatch(newsError());
         }
     }
 };

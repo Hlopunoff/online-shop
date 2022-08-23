@@ -1,0 +1,82 @@
+@import '../../style/funcs';
+.about {
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #222A46;
+    }
+    &__info {
+        margin-top: 10px;
+    }
+    &__desc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #222A46;
+    }
+    &__subtitle {
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #222A46;
+    }
+    &__list {
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    &__item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #222A46;
+    }
+    &__howto {
+        display: block;
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #222A46;
+    }
+    &__employees {
+        margin-top: 60px;
+        .employees {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            row-gap: 40px;
+        }
+        .employee {
+            width: 180px;
+            height: 212px;
+            &__img-wrap {
+                width: 100%;
+                height: prc(180, 212);
+                border-radius: 50%;
+            }
+            &__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            &__name {
+                text-align: center;
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+                color: #222A46;
+            }
+        }
+    }
+}

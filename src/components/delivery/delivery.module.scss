@@ -1,0 +1,98 @@
+.delivery {
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #222A46;
+    }
+    &__speed {
+        padding: 30px 40px;
+        margin-top: 20px;
+        border: 1px solid #E2E4EB;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+        }
+    }
+    &__subtitle {
+        display: block;
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #222A46;
+    }
+    &__info {
+        margin-top: 30px;
+        display: flex;
+        column-gap: 20px;
+    }
+    &__rate {
+        padding: 30px;
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 20px;
+        border: 1px solid #D0D2D7;
+        border-radius: 10px;
+        .rate__title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+        }
+        .rate__price {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+        }
+        .rate__text {
+            display: block;
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #222A46;
+        }
+    }
+    &__timeline {
+        padding: 30px;
+        flex: 1;
+        border: 1px solid #D0D2D7;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 20px;
+        .timeline__title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+        }
+        .timeline__timeline {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222A46;
+        }
+    }
+}

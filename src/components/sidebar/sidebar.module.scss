@@ -1,0 +1,30 @@
+.sidebar {
+    max-width: 250px;
+    min-width: 250px;
+    &__list {
+        list-style-type: none;
+        border: 1px solid #D0D2D7;
+        border-radius: 5px;
+    }
+    &__item {
+        display: block;
+        text-decoration: none;
+        padding: 20px 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #222A46;
+        transition: all ease;
+        &:first-child {
+            border-bottom: 1px solid #D0D2D7
+        }
+        &:last-child {
+            border-top: 1px solid #D0D2D7;
+        }
+        // &:hover {
+        //     color: #0093A2;
+        //     border-left: 2px solid #0093A2;
+        // }
+    }
+}
