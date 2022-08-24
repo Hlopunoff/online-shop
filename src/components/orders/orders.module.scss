@@ -1,0 +1,142 @@
+@import '../../style/funcs';
+.section {
+    width: prc(870, 1180);
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #222A46;
+    }
+    &__content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+        border-radius: 10px;
+        border: 1px solid #F2F3F5;
+        .content__header {
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            background: #F4F5F7;
+            .col__title {
+                display: inline-block;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #505567;
+                &:first-child {
+                    margin-right: 20px;
+                }
+                &:nth-child(2) {
+                    margin-right: 100px;
+                }
+                &:nth-child(3) {
+                    margin-right: 30px;
+                }
+                &:nth-child(4) {
+                    margin-right: 65px;
+                }
+                &:nth-child(5) {
+                    margin-right: 85px;
+                }
+                &:last-child {
+                    margin-right: 100px;
+                }
+            }
+        }
+        .content__body {
+            display: flex;
+            flex-direction: column;
+            .order {
+                padding: 20px;
+                border: 1px solid #E2E4EB;
+                display: flex;
+                align-items: center;
+                &__id {
+                    display: inline-block;
+                    margin-right: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #0093A2;
+                    white-space: nowrap;
+                }
+                &__name {
+                    display: inline-block;
+                    margin-right: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #222A46;
+                    white-space: nowrap;
+                }
+                &__date {
+                    display: inline-block;
+                    margin-right: 50px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #222A46;
+                    white-space: nowrap;
+                }
+                &__owner {
+                    display: inline-block;
+                    margin-right: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #222A46;
+                    white-space: nowrap;
+                }
+                &__status {
+                    display: inline-block;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    white-space: nowrap;
+                    &[data-status="reject"] {
+                        color: #E2195B;
+                        margin-right: 70px;
+                    }
+                    &[data-status="waiting"] {
+                        color: #FFA500;
+                        margin-right: 20px;
+                    }
+                    &[data-status="success"] {
+                        color: #0093A2;
+                        margin-right: 65px;
+                    }
+                }
+                &__price {
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #1B1C21;
+                    white-space: nowrap;
+                }
+                &__comment {
+                    display: inline-block;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #0093A2;
+                    background-color: #fff;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -30,7 +30,7 @@ const Nav = () => {
                 <div className={styles.socials}>
                     <a href='#' className={`icon-vk-logo ${styles.vk}`}></a>
                     <a href='#' className={`icon-insta-logo ${styles.insta}`}></a>
-                    <div className={`icon-user ${styles.user}`}>Мои заказы</div>
+                    <Link to='account' className={`icon-user ${styles.user}`}>Мои заказы</Link>
                 </div>
             </div>
         </div>

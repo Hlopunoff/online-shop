@@ -1,0 +1,59 @@
+@import '../../style/funcs';
+.sidebar {
+    width: prc(250, 1180);
+    &__greeting {
+        display: inline-block;
+        margin-left: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1B1D1F;
+    }
+    &__discount {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        background: #F2F6F7;
+        border: 1px solid #E2E4EB;
+        border-radius: 10px;
+        padding: 15px 20px 15px 20px;
+        .discount__rate {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #1B1C21;
+            b {
+                margin-left: 5px;
+                color: #E2195B;
+            }
+        }
+        .discount__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #505567;
+        }
+    }
+    &__list {
+        margin-top: 20px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #222A46;
+    }
+}
