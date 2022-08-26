@@ -1,6 +1,7 @@
 import React from "react";
-import Header from './components/header/Header';
 import {Routes, Route} from 'react-router-dom';
+
+import Header from './components/header/Header';
 import MainPage from "./pages/MainPage";
 import Footer from "./components/footer/Footer";
 import CatalogPage from "./pages/CatalogPage";
@@ -9,6 +10,9 @@ import CommentsPage from "./pages/CommentsPage";
 import BlogPage from "./pages/BlogPage";
 import InfoPage from "./pages/InfoPage";
 import AccountPage from "./pages/AccountPage";
+import Register from "./components/register/Register";
+import Auth from "./hoc/Auth";
+
 
 function App() {
   return (
@@ -20,7 +24,12 @@ function App() {
         <Route path="/comments" element={<CommentsPage/>}/>
         <Route path="/blog" element={<BlogPage/>}/>
         <Route path="/info/*" element={<InfoPage/>}/>
-        <Route path="/account/*" element={<AccountPage/>}/>
+        <Route path="/account/*" element={
+          <Auth>
+            <AccountPage/>
+          </Auth>
+        }/>
+        <Route path="/register" element={<Register/>}/>
       </Routes>
       <Footer/>
       <Cart/>
