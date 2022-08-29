@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {useLocation, useNavigate} from 'react-router-dom';
+import {Link, useLocation, useNavigate} from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -76,7 +76,8 @@ const Register = () => {
                 onClick={handleSubmit}
                 disabled={loading}
                 style={loading ? {background: '#505567'} : null}>Зарегистрироваться</button>
-              <p className={styles['form__policy']}>Нажимая кнопку "Зарегистрироваться" вы соглашаетесь с условиями <a href="#" className={styles['form__policy-link']}>обработки персональных данных и публичной офертой</a>.</p>
+              <p className={styles['form__policy']}>Нажимая кнопку "Зарегистрироваться", вы соглашаетесь с условиями <a href="#" className={styles['form__policy-link']}>обработки персональных данных и публичной офертой</a>.</p>
+              <span className={styles['form__cla']}>Уже есть аккаунт? <Link to="/login" className={styles['form__login']}>Войти</Link></span>
               <div onClick={() => navigate(-2)} className={styles['form__close']}>
                 <img src={closeImg} alt="close" />
               </div>

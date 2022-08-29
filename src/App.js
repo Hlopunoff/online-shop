@@ -12,6 +12,7 @@ import InfoPage from "./pages/InfoPage";
 import AccountPage from "./pages/AccountPage";
 import Register from "./components/register/Register";
 import Auth from "./hoc/Auth";
+import LogIn from "./components/login/LogIn";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           </Auth>
         }/>
         <Route path="/register" element={<Register/>}/>
+        <Route path="/login" element={<LogIn/>}/>
       </Routes>
       <Footer/>
       <Cart/>

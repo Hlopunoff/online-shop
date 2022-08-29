@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import {NavLink, useNavigate} from 'react-router-dom';
-import { useAuth } from '../../hooks/useAuth';
 import { removeUser } from '../../reducers/userSlice';
 
 import styles from './accountSidebar.module.scss';
@@ -14,13 +13,12 @@ import accountImg6 from '../../assets/icons/coupon.png';
 import accountImg7 from '../../assets/icons/exit.svg';
 
 const AccountSidebar = () => {
-    const {userName} = useAuth();
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
     return (
         <aside className={styles['sidebar']}>
-            <span className={styles['sidebar__greeting']}>Здравствуйте, {userName.split(' ')[0]}!</span>
+            <span className={styles['sidebar__greeting']}>Здравствуйте!</span>
             <div className={styles['sidebar__discount']}>
                 <span className={styles['discount__rate']}>Ваша скидка<b>5%</b></span>
                 <span className={styles['discount__text']}>Цены на сайте отображаются с учётом вашей скидки</span>
