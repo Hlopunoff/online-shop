@@ -35,6 +35,10 @@ const Catalog = (props) => {
         dispatch(fetchBouquets(`http://localhost:3001/bouquets`));
     }, [filters]);
 
+    useEffect(() => {
+        dispatch(fetchBouquets(`http://localhost:3001/bouquets`));
+    }, [ ]);
+
     const chooseFilter = (e) => {
         const target = e.target;
 

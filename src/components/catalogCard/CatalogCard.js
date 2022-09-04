@@ -7,11 +7,12 @@ import styles from './catalogCard.module.scss';
 const CatalogCard = (props) => {
     const bouquets = useSelector(state => state.bouquets.bouquets);
     const dispatch = useDispatch();
+    const userId = useSelector(state => state.user.user.id);
 
     const addBouquet = (id, purpose) => {
         const selected = bouquets.filter(item => item.id === id)[0];
         if (purpose === 'cart') {
-            dispatch(addToCart(selected));
+            dispatch(addToCart({...selected, userId}));
         } else {
             dispatch(addToFavorite(selected));
         }
