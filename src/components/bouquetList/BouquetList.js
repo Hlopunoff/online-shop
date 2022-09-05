@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchBouquets } from '../../reducers/bouquetsSlice';
 
 import Slider from '../slider/Slider';
-
-import styles from './bouquetList.module.scss';
 import Bouquet from '../bouquet/Bouquet';
+import Preloader from '../preloader/Preloader';
+import styles from './bouquetList.module.scss';
 
 const BouquetList = (props) => {
 
@@ -17,7 +17,7 @@ const BouquetList = (props) => {
     }, [ ]);
 
 
-    const loading = isLoading ? <h2>Загрузка</h2> : null;
+    const loading = isLoading ? <Preloader/> : null;
     const error = isError ? <h2>Ошибка</h2> : null;
     const content = !(loading || error || !bouquets) ? bouquets.filter(item => item.category.includes(props.category)).map(item => {
         return <Bouquet
