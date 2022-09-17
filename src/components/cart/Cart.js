@@ -71,8 +71,8 @@ const Cart = () => {
 
     const {content, totalPrice} = renderContent(cart);
     return (
-        <div className={styles['cart__substrate']} ref={cartWrapRef}>
-            <div className={styles['cart']} ref={cartRef}>
+        <div className={`cart__substrate ${styles['cart__substrate']}`} ref={cartWrapRef}>
+            <div className={`cart ${styles['cart']}`} ref={cartRef}>
                 <div className={styles['cart__header']}>
                     <h3 className={styles['cart__title']}>Корзина</h3>
                     <div 

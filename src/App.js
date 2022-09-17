@@ -13,6 +13,7 @@ import AccountPage from "./pages/AccountPage";
 import Register from "./components/register/Register";
 import Auth from "./hoc/Auth";
 import LogIn from "./components/login/LogIn";
+import SingleBouquetPage from "./pages/sigleBouquetPage/SingleBouquetPage";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage/>}/>
         <Route path="/roses" element={<CatalogPage/>}/>
+        <Route path="/roses/:id" element={<SingleBouquetPage/>}/>
         <Route path="/comments" element={<CommentsPage/>}/>
         <Route path="/blog" element={<BlogPage/>}/>
         <Route path="/info/*" element={<InfoPage/>}/>

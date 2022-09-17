@@ -21,8 +21,8 @@ const Menu = () => {
     }, 0);
 
     const showCart = () => {
-        document.querySelector('.cart_cart__substrate__aKaEs').style.visibility = 'visible';
-        document.querySelector('.cart_cart__H2Shb').style.right = '0';
+        document.querySelector('.cart__substrate').style.visibility = 'visible';
+        document.querySelector('.cart').style.right = '0';
         document.body.classList.add('cart-shown');
     }
 

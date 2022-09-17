@@ -3,6 +3,9 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 const initialState = {
     cart: [],
     favorites: [],
+    bouquet: {},
+    isLoading: false,
+    isError: false,
     error: ''
 };
 
@@ -36,6 +39,24 @@ export const addBouquetTo = createAsyncThunk(
     }
 );
 
+export const getBouquetById = createAsyncThunk(
+    'singleBouquet',
+    async (id, {rejectWithValue}) => {
+        try {
+            const res = await fetch('http://localhost:3001/bouquets');
+
+            if(!res.ok) {
+                throw new Error(`Cold not fetch such bouquet with id: ${id}`);
+            }
+            const data = await res.json();
+
+            return data.filter(item => item.id === id)[0];
+        } catch (error) {
+            return rejectWithValue(error.message);
+        }
+    }
+);
+
 const singleBouquetSlice = createSlice({
     name: 'singleBouquet',
     initialState,
@@ -61,6 +82,16 @@ const singleBouquetSlice = createSlice({
         builder.addCase(addBouquetTo.rejected, (state, action) => {
             state.error = action.payload;
         })
+        .addCase(getBouquetById.pending, (state) => {state.isLoading = true;})
+        .addCase(getBouquetById.fulfilled, (state, action) => {
+            state.bouquet = action.payload;
+            state.isLoading = false;
+        })
+        .addCase(getBouquetById.rejected, (state, action) => {
+            state.isLoading = false;
+            state.isError = true;
+            state.error = action.payload
+        });
     }
 });
 
