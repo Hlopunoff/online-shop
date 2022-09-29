@@ -21,3 +21,4 @@
 3. Firebase (авторизация)
 4. Json-server (Основная БД)
 5. Роутинг React Router v6
+6. SCSS (SCSS Modules)
