@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Онлайн-магазин, написанный на React + Redux (Redux toolkit) (SPA)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Функционал:
+1. Регистрация и авторизация через Email и пароль с последующим доступом в личный кабинет.
+2. Добавление в корзину как через карточку товара, так и непосредственно внутри компонента самой корзины.
+3. Добавление товара в блок "Понравившееся".
+4. Динамический подсчет кол-ва товаров и общей суммы денег в корзине.
+5. Все товары, комментарии клиентов, новости приходят от сервера (json-server).
+6. Блок с товаром недели, который отбирается через соответствующие теги.
+7. Выпадающее меню, написанное на чистом SCSS.
+8. Переход по разделам в соответствующий каталог товаров.
+9. Фильтрация как по одному критерию, так и по нескольким (цена, размер, состав, кому), а также возможность очистки этих фильтров в один клик.
+10. Показ товаров с пагинацией.
+11. Отдельная сортировка по (алфавиту, популярности, возрастанию/убыванию цены).
+12. Отдельная сортировка по тегам.
+13. Отдельная страница карточки товара с фотоколлажом, подробной информацией и возможностью покупки.
+14. В момент загрузки показывается прелоадер, а в случае ошибки - соответствующая картинка.
+## Технологии:
+1. React (Hooks, HOC, Custom Hooks, ES6+)
+2. Redux/Redux toolkit (Slice, async Thunk ...)
+3. Firebase (авторизация)
+4. Json-server (Основная БД)
+5. Роутинг React Router v6
