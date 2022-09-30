@@ -14,6 +14,7 @@ import Register from "./components/register/Register";
 import Auth from "./hoc/Auth";
 import LogIn from "./components/login/LogIn";
 import SingleBouquetPage from "./pages/sigleBouquetPage/SingleBouquetPage";
+import Page404 from "./pages/404Page/Page404";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         }/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/login" element={<LogIn/>}/>
+        <Route path="*" element={<Page404/>}/>
       </Routes>
       <Footer/>
       <Cart/>
