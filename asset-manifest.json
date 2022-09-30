@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-shop/static/css/main.22842a71.css",
-    "main.js": "/online-shop/static/js/main.51ef25b6.js",
+    "main.css": "/online-shop/static/css/main.41099ee7.css",
+    "main.js": "/online-shop/static/js/main.85075593.js",
     "static/media/mainSlide1.png": "/online-shop/static/media/mainSlide1.340a46ac7f402a2dcde0.png",
     "static/media/catalogBouquets-chapter.png": "/online-shop/static/media/catalogBouquets-chapter.6b79673e2c6da35b8009.png",
     "static/media/compositions-chapter.png": "/online-shop/static/media/compositions-chapter.3e5b7703583e940100b9.png",
@@ -50,11 +50,11 @@
     "static/media/red-clock.svg": "/online-shop/static/media/red-clock.88a3f3ccbdd304233e3f7254ebe6d021.svg",
     "static/media/arrow-down.svg": "/online-shop/static/media/arrow-down.443416dd3a5283114c13.svg",
     "static/media/arrow-top.svg": "/online-shop/static/media/arrow-top.5999f4153a0f4b100f3521dfb772dc09.svg",
-    "main.22842a71.css.map": "/online-shop/static/css/main.22842a71.css.map",
-    "main.51ef25b6.js.map": "/online-shop/static/js/main.51ef25b6.js.map"
+    "main.41099ee7.css.map": "/online-shop/static/css/main.41099ee7.css.map",
+    "main.85075593.js.map": "/online-shop/static/js/main.85075593.js.map"
   },
   "entrypoints": [
-    "static/css/main.22842a71.css",
-    "static/js/main.51ef25b6.js"
+    "static/css/main.41099ee7.css",
+    "static/js/main.85075593.js"
   ]
 }
