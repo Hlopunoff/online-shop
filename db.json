@@ -63,7 +63,7 @@
         "delivery"
       ],
       "img": "https://www.brides.com/thmb/yUPPrY_zpEg-jEppH9Z8hQIVRhQ=/735x0/peonybouquet_640-3d8ee6a2dbcc4bfdbec9a56e5d6e6c92.jpg",
-      "selected": true,
+      "selected": false,
       "types": [
         "rose"
       ],
@@ -87,7 +87,7 @@
         "delivery"
       ],
       "img": "https://i0.wp.com/pablogiftshop.co.ke/wp-content/uploads/2022/03/red-roses-and-berry-flowers-bouquet-4.jpg?fit=2560%2C2200&ssl=1",
-      "selected": false,
+      "selected": true,
       "types": [
         "rose"
       ],
@@ -299,6 +299,107 @@
       "h": "46-60",
       "d": "<25",
       "color": "dark-red",
+      "amountOfFlowers": 25
+    },
+    {
+      "id": 13,
+      "name": "Букет 25 роз Нежный микс",
+      "size": "Высота: 60 см, Ширина: 35 см",
+      "currPrice": 14399,
+      "prevPrice": 15499,
+      "category": [
+        "delivery",
+        "best",
+        "new"
+      ],
+      "img": "https://i0.wp.com/pablogiftshop.co.ke/wp-content/uploads/2022/03/red-roses-and-berry-flowers-bouquet-4.jpg?fit=2560%2C2200&ssl=1",
+      "selected": false,
+      "types": [
+        "rose",
+        "best-of-the-week"
+      ],
+      "amountOfComments": 15,
+      "rating": "5.0",
+      "deliveryDuration": 150,
+      "relativeTo": "colleague",
+      "type": "eustoma",
+      "h": "61-75",
+      "d": ">55",
+      "color": "red",
+      "amountOfFlowers": 25
+    },
+    {
+      "id": 14,
+      "name": "Букет роз Ред наоми 60 см",
+      "size": "Высота: 60 см, Ширина: 35 см",
+      "currPrice": 13499,
+      "prevPrice": 15499,
+      "category": [
+        "delivery",
+        "best",
+        "new"
+      ],
+      "img": "https://content2.flowwow-images.com/data/flowers/1000x1000/21/1636702937_42250521.jpg",
+      "selected": false,
+      "types": [
+        "rose"
+      ],
+      "amountOfComments": 15,
+      "rating": "4.0",
+      "deliveryDuration": 150,
+      "relativeTo": "boss",
+      "type": "tulips",
+      "h": "<45",
+      "d": "26-40",
+      "color": "light-blue",
+      "amountOfFlowers": 301
+    },
+    {
+      "id": 15,
+      "name": "Букет 5 пионовидных роз Мисти баблс",
+      "size": "Высота: 60 см, Ширина: 35 см",
+      "currPrice": 10599,
+      "prevPrice": 15499,
+      "category": [
+        "delivery"
+      ],
+      "img": "https://www.brides.com/thmb/yUPPrY_zpEg-jEppH9Z8hQIVRhQ=/735x0/peonybouquet_640-3d8ee6a2dbcc4bfdbec9a56e5d6e6c92.jpg",
+      "selected": false,
+      "types": [
+        "rose"
+      ],
+      "amountOfComments": 15,
+      "rating": "4.0",
+      "deliveryDuration": 150,
+      "relativeTo": "daughter",
+      "type": "eustoma",
+      "h": ">75",
+      "d": ">55",
+      "color": "white",
+      "amountOfFlowers": 33
+    },
+    {
+      "id": 16,
+      "name": "Букет роз микс 40 см",
+      "size": "Высота: 60 см, Ширина: 35 см",
+      "currPrice": 13499,
+      "prevPrice": 15499,
+      "category": [
+        "delivery"
+      ],
+      "img": "https://i0.wp.com/pablogiftshop.co.ke/wp-content/uploads/2022/03/red-roses-and-berry-flowers-bouquet-4.jpg?fit=2560%2C2200&ssl=1",
+      "selected": false,
+      "types": [
+        "rose"
+      ],
+      "amountOfComments": 15,
+      "rating": "3.0",
+      "deliveryDuration": 150,
+      "relativeTo": "boss",
+      "type": "eustoma",
+      "h": "61-75",
+      "d": "41-55",
+      "color": "light-pink",
       "amountOfFlowers": 25
     }
   ],
